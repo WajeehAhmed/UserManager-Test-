@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Building the application...'
         script {
-        def test = 2+2 > 5 ? 'cool': 'not cool'
+        def test = 2+2 > 5 ? 'cooler': 'not coolest'
         echo test
         }
       }
