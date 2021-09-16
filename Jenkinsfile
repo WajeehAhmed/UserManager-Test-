@@ -4,8 +4,10 @@ pipeline {
     stage("build"){
       steps {
         echo 'Building 🏗 the application...'
-        sh 'npm install'
-        sh 'npm run build'
+        nodejs('NodeJS') {
+          sh 'npm install'
+          sh 'npm run build'
+        }
       }
     }
     
