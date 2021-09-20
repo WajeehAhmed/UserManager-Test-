@@ -8,6 +8,7 @@ pipeline {
           sh 'npm install'
           sh 'npm run build'
         }
+         echo 'Built Complete!!!'
       }
     }
     
